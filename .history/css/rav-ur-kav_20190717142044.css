@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+}
+heading{
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    align-items: center;
+    box-shadow: 5px;
+}
+.existing-user{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+.new-user{
+    background-color: lightgreen;
+}
+h1{
+    text-align: center;
+}
