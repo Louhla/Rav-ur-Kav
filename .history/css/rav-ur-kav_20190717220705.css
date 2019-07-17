@@ -126,12 +126,6 @@ h1{
 }
 .add-city{
     background-color: #462F79;
-    border-radius: 50px;
-    border-style: none;
-    color:white;
-}
-#hidden-city{
-    display: none;
 }
 #rav-my-kav{
     position: relative;
