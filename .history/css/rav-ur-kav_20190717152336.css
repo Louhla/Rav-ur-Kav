@@ -1,7 +1,6 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("/img/bus.jpg");
 }
 /* Modal START */
 #modal-wrapper {
@@ -16,42 +15,52 @@ body {
 }
 
 #modal-wrapper .modal {
-    background-color: #462F79;
-    width: 70vw;
-    height: 70vh;
+    background-color: white;
+    width: 90vw;
+    height: 90vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     border-radius: 5px;
+    text-align: center;
+    background-image: url('../img/bgm.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: white;
+    text-shadow: 3px 3px #000000;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
 }
 
-
-.modal h1 {
-    font-size: 3rem;
-    margin: 1rem 5rem;
-    text-shadow: 1px 2px #000000;
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal h3 {
+.modal-content h1 {
     font-size: 2rem;
-    margin: 1rem 5rem;
+    margin-block-start: 0.3rem;
+    margin-block-end: 0.3rem;
+}
+
+.modal-content h3 {
+    font-size: 1rem;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
 }
 
 #button-box {
-    width: 80%;
+    width: 70vh;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .my-button {
-    color: white;
-    background-color:#27164D;
+    color: red;
+    background-color: yellow;
     height: 5vh;
     width: 20vh;
     font-size: 4vh;
@@ -108,7 +117,7 @@ h1{
     margin: auto;
     text-align: center;
 }
-#rav-kav-number-button, #purchase{
+#rav-kav-number-button{
     width: 60%;
     margin: auto;
     height: 50px;
@@ -116,22 +125,10 @@ h1{
     border-style: none;
     color: white;
     background-color: #462F79;
-    -webkit-transition: width 0.5s ease-in-out;
-    -moz-transition: width 0.5s ease-in-out;
-    -ms-transition: width 0.5s ease-in-out;
-    transition: width 0.5s ease-in-out;
 }
-#rav-kav-number-button:hover{
-    width: 62%;
-}
-a{
-    cursor:pointer;
-    text-decoration: none;
-    color: white;
-}
-a:hover{
-    text-decoration: none; 
-    color: white;
+a {
+    all: unset;
+    cursor: pointer;
 }
 #how-to{
     margin: 10px 50px 10px 0px;
@@ -152,7 +149,7 @@ a:hover{
 h1{
     text-align: center;
     margin: 100px;
-    color: #462F79;
+    color: #8CE95C;
     font-size: 38px;
 }
 .existing-user > h4, .new-user > h4{
@@ -163,24 +160,11 @@ h1{
 }
 #rav-kav-number{
     width: 60%;
-    height: 30%;
     margin: auto;
     text-align: center;
 }
-.recommended-plan{
-    display: flex;
-    align-items :center;
-    flex-direction: column;
-    margin-top: 100px;
-}
-.recommended-plan > div{
-    height: 300px;
-}
-h2{
-    color: #462F79;
-    font-size: 38px; 
-}
-#purchase{
-    margin-bottom: 100px;
+#rav-kav-number-button{
+    width: 60%;
+    margin: auto;
 }
 /* Homepage END */

@@ -18,6 +18,6 @@ console.log("whats up")
 
 
 
-$('#rav-kav-number').on('input', function (event) { 
+$('.numeric').on('input', function (event) { 
     this.value = this.value.replace(/[^0-9]/g, '');
 });
