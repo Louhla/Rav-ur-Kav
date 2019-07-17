@@ -54,10 +54,5 @@ h1{
     height: 50px;
     border-radius: 50px;
     border-style: none;
-    color: white;
-    background-color: #462F79;
-}
-a {
-    all: unset;
-    cursor: pointer;
+    font:white;
 }

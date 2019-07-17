@@ -57,7 +57,3 @@ h1{
     color: white;
     background-color: #462F79;
 }
-a {
-    all: unset;
-    cursor: pointer;
-}
