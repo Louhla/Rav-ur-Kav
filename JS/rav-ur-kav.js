@@ -11,8 +11,12 @@ $(document).ready(() => {
     });
     $(howToButton).on("click", () => {
       $("#modal-wrapper").toggle();
-      console.log('how to')
     });
+    // Rav my Kav button
+    let reccomendedPlanButton = $("#rav-kav-number-button");
+    $(reccomendedPlanButton).on("click", () => {
+        $("#recommended-plan").css("display", "flex");
+    })
 });
 console.log("whats up")
 
