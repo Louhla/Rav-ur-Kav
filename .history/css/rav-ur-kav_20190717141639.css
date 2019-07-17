@@ -1,0 +1,16 @@
+body{
+    margin: 0px;
+}
+heading{
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    align-items: center;
+    box-shadow: 5px;
+}
+.new-user{
+    background-color: lightgreen;
+}
+.existing-user{
+    background-color: grey;
+}

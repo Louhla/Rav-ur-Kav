@@ -14,3 +14,4 @@ $(document).ready(() => {
       console.log('how to')
     });
 });
+console.log("whats up")
