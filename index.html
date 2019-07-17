@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/rav-ur-kav.css">
@@ -16,8 +13,22 @@
 </head>
 
 <body>
+    <div id="modal-wrapper">
+        <div class="modal">
+            <div class="modal-content">
+                <h1>How to Rav my Kav:</h1>
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, velit. Impedit non consequatur corporis tempore hic natus repudiandae veritatis voluptates pariatur numquam? Libero illo suscipit cum vitae. Quam, ex in!</h3>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sint. Eius adipisci tenetur dolore quis rem eos expedita error officia. Maiores dolore maxime enim ut quos dolorem nesciunt ea pariatur?</h3>
+            </div>
+            <br>
+            <div id="button-box">
+                <button class="my-button" id="close">Close</button>
+            </div>
+        </div>
+    </div>
+    <button class="my-button" id="how-to">How To</button>
     <div id="root"></div>
-    <script type="text/jsx" src="./js/rav-ur-kav.js"></script>
+    <script type="text/javascript" src="./js/rav-ur-kav.js"></script>
 </body>
 
 </html>
