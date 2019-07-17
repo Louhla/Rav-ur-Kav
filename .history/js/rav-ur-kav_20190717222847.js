@@ -21,7 +21,7 @@ $(document).ready(() => {
     $("#recommended-plan").css("display", "flex");
   });
   $("#add-city").on("click", () => {
-    $("#hidden-cities").css("display", "flex");
+    $("#hidden-cities").css("display", "inline-block");
   });
 });
 

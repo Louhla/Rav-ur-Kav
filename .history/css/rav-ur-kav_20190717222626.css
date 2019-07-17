@@ -132,17 +132,7 @@ h1{
     position: relative;
     top: 37px;
 }
-#hidden-cities{
-    display:none;
-    margin: auto;
-    margin-left: 184px;
-}
-#add-city{
-    background-color: #462F79;
-    border-radius: 50px;
-    border-style: none;
-    color: white;
-}
+hidden-cities
 .submit-new-customer{
     height: 200px;
 }
