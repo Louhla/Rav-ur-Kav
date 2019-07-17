@@ -23,3 +23,21 @@ $(document).ready(() => {
 $('#rav-kav-number').on('input', function (event) { 
     this.value = this.value.replace(/[^0-9]/g, '');
 });
+
+$('.carousel').carousel({
+    interval: false
+  }).on('slid.bs.carousel', function () {
+      curSlide = $('.active');
+    if(curSlide.is( ':first-child' )) {
+       $('.left').hide();
+       return;
+    } else {
+       $('.left').show();   
+    }
+    if (curSlide.is( ':last-child' )) {
+       $('.right').hide();
+       return;
+    } else {
+       $('.right').show();      
+    }
+  });
