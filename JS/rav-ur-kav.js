@@ -1,4 +1,3 @@
-console.log("step1");
 
 $(document).ready(() => {
     // Globals
@@ -13,12 +12,15 @@ $(document).ready(() => {
       $("#modal-wrapper").toggle();
     });
     // Rav my Kav button
-    let reccomendedPlanButton = $("#rav-kav-number-button");
-    $(reccomendedPlanButton).on("click", () => {
+    let reccomendedPlanButton1 = $("#rav-kav-number-button");
+    let reccomendedPlanButton2 = $("#rav-my-kav");
+    $(reccomendedPlanButton1).on("click", () => {
         $("#recommended-plan").css("display", "flex");
-    })
+    });
+    $(reccomendedPlanButton2).on("click", () => {
+        $("#recommended-plan").css("display", "flex");
+    });
 });
-console.log("whats up")
 
 
 
