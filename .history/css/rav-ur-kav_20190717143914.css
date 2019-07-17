@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+}
+heading{
+    display: flex;
+    position: fixed;
+    z-index: 9;
+    justify-content: space-between;
+    width: 100%; 
+    align-items: center;
+    box-shadow: 5px;
+    background-color: #462F79;
+    color: white;
+    font-size: 22px;
+}
+.logo{
+    margin: 10px 0px 10px 50px;
+}
+.how-to{
+    margin: 10px 50px 10px 0px;
+}
+.existing-user{
+    background-color: #8CE95C;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50vh;
+}
+.new-user{
+    background-color: #8CE95C;
+    text-align: center;
+    height: 50vh;
+}
+h1{
+    text-align: center;
+    margin: 100px;
+    color: #8CE95C;
+    font-size: 38px;
+}
+.existing-user > h4, .new-user > h4{
+    background-color: #462F79;
+    padding: 15px 0px;
+    margin: 0px;
+    color: white;
+}
+#rav-kav-number{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+#rav-kav-number-button{
+width: 60%;
+margin: auto;

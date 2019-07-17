@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+}
+heading{
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    align-items: center;
+    box-shadow: 5px;
+    background-color: #462F79
+}
+.logo{
+    margin-left: 50px;
+}
+.how-to{
+    margin-right: 50px;
+}
+.existing-user{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50vh;
+}
+.new-user{
+    background-color: lightgreen;
+    text-align: center;
+    height: 50vh;
+}
+h1{
+    text-align: center;
+    margin: 100px;
+}
