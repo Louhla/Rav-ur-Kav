@@ -1,4 +1,3 @@
-console.log("step1");
 
 $(document).ready(() => {
     // Globals
@@ -18,7 +17,6 @@ $(document).ready(() => {
         $("#recommended-plan").css("display", "flex");
     })
 });
-console.log("whats up")
 
 
 
