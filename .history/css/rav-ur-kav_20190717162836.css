@@ -183,14 +183,9 @@ h1{
     flex-direction: column;
     margin-top: 100px;
 }
-.recommended-plan > div{
-    height: 300px;
-}
+.recommended
 h2{
     color: #462F79;
     font-size: 38px; 
-}
-#purchase{
-    margin-bottom: 100px;
 }
 /* Homepage END */

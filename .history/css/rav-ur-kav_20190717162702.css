@@ -162,7 +162,7 @@ a:hover{
 h1{
     text-align: center;
     margin: 100px;
-    color: #462F79;
+    color: #8CE95C;
     font-size: 38px;
 }
 .existing-user > h4, .new-user > h4{
@@ -181,16 +181,5 @@ h1{
     display: flex;
     align-items :center;
     flex-direction: column;
-    margin-top: 100px;
-}
-.recommended-plan > div{
-    height: 300px;
-}
-h2{
-    color: #462F79;
-    font-size: 38px; 
-}
-#purchase{
-    margin-bottom: 100px;
 }
 /* Homepage END */
