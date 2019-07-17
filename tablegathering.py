@@ -13,7 +13,7 @@ user_generator = UserRandomizer(a)
 passenger = user_generator.generate_passenger()
 passenger.drop(['Debit_amount'], axis=1, inplace=True)
 passenger.dropna(inplace=True)
-print(passenger)
+# print(passenger)
 
 cities_per_area = pd.DataFrame.from_dict(gush_dan, orient='index').transpose()
 # print(cities_per_area)
@@ -24,3 +24,6 @@ stops.drop(['stop_id', 'stop_name', 'location_type', 'parent_station', 'zone_id'
 
 price_df = pd.DataFrame.from_dict(prices, orient='index')
 # print(price_df.head())
+
+print(stops['stop_code'].isin(passenger['Place'].values))  # TODO: FOUND THE STOPS
+
