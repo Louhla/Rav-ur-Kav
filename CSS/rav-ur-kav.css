@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("/img/bus.jpg");
+    /* background-image: url(../IMG/bus.jpg); */
 }
 /* Modal START */
 #modal-wrapper {
@@ -16,52 +16,42 @@ body {
 }
 
 #modal-wrapper .modal {
-    background-color: white;
-    width: 90vw;
-    height: 90vh;
+    background-color: #462F79;
+    width: 70vw;
+    height: 70vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     border-radius: 5px;
-    text-align: center;
-    background-image: url('../img/bgm.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     color: white;
-    text-shadow: 3px 3px #000000;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
 }
 
-.modal-content {
-    background-color: rgba(0, 0, 0, 0.5);
+
+.modal h1 {
+    font-size: 3rem;
+    margin: 1rem 5rem;
+    text-shadow: 1px 2px #000000;
 }
 
-.modal-content h1 {
+.modal h3 {
     font-size: 2rem;
-    margin-block-start: 0.3rem;
-    margin-block-end: 0.3rem;
-}
-
-.modal-content h3 {
-    font-size: 1rem;
-    margin-block-start: 0.5rem;
-    margin-block-end: 0.5rem;
+    margin: 1rem 5rem;
 }
 
 #button-box {
-    width: 70vh;
+    width: 80%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .my-button {
-    color: red;
-    background-color: yellow;
+    color: white;
+    background-color:#27164D;
     height: 5vh;
     width: 20vh;
     font-size: 4vh;
@@ -178,7 +168,7 @@ h1{
     text-align: center;
 }
 .recommended-plan{
-    display: flex;
+    display: none;
     align-items :center;
     flex-direction: column;
     margin-top: 100px;
