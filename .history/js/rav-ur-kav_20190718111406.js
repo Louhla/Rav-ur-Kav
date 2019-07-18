@@ -36,21 +36,9 @@ $(document).ready(() => {
     var objVal = {};
     var arr = $(':selected', this).map(function() {
       return this.value;
+      console.log(objVal);
     })
-  console.log(objVal);
   })
-
-
-  $('#add').on("click", function() {
-    var objVal = {};
-    $('select').each(function() {
-      var arr = $(':selected', this).map(function() {
-        return this.value;
-      }).get();
-      objVal[$(this).attr("name")] = arr;
-    });
-    console.log(objVal);
-  });
 
 
   $('#plan-calculator-form3').click(function(){

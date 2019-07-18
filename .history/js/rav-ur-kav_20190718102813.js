@@ -27,37 +27,12 @@ $(document).ready(() => {
     var userRavKavNumber = $("#rav-kav-number").val();
       console.log(userRavKavNumber);
   })
-  $('#plan-calculator-form1').click(function(){
+  $('#plan-calculator-form1 input').click(function(){
     var usertype = $("input[name=radio]:checked", "#plan-calculator-form1").val();
       console.log(usertype);
   })
-  $('#plan-calculator-form2').click(function(e){
-    event.preventDefault();
-    var objVal = {};
-    var arr = $(':selected', this).map(function() {
-      return this.value;
-    })
-  console.log(objVal);
-  })
-
-
-  $('#add').on("click", function() {
-    var objVal = {};
-    $('select').each(function() {
-      var arr = $(':selected', this).map(function() {
-        return this.value;
-      }).get();
-      objVal[$(this).attr("name")] = arr;
-    });
-    console.log(objVal);
-  });
-
-
-  $('#plan-calculator-form3').click(function(){
-    var frequency = $('#plan-calculator-form3').attr("id", "c2c");
-      console.log(frequency);
-  })
 });
+
 
 
 $('#rav-kav-number').on('input', function (event) {

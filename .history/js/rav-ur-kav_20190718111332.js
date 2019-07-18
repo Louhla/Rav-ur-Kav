@@ -37,6 +37,8 @@ $(document).ready(() => {
     var arr = $(':selected', this).map(function() {
       return this.value;
     })
+    objVal[$(this).attr("name")] = arr;
+  });
   console.log(objVal);
   })
 

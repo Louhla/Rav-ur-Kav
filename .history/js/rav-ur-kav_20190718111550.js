@@ -36,6 +36,7 @@ $(document).ready(() => {
     var objVal = {};
     var arr = $(':selected', this).map(function() {
       return this.value;
+        console.log(objVal);
     })
   console.log(objVal);
   })

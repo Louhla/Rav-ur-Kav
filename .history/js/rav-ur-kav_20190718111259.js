@@ -34,10 +34,8 @@ $(document).ready(() => {
   $('#plan-calculator-form2').click(function(e){
     event.preventDefault();
     var objVal = {};
-    var arr = $(':selected', this).map(function() {
-      return this.value;
-    })
-  console.log(objVal);
+    var city = $("#plan-calculator-form2").find(":selected").val();
+      console.log(city);
   })
 
 

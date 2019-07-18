@@ -71,17 +71,18 @@
                         <div class="carousel-inner">
                             <div class="item active">
                                 <h3>Choose your passenger type</h3>
+
                                 <div>
                                     <label>Ordinary</label>
                                     <input type="radio" name="radio" value="ordinary"></input>
                                 </div>
                                 <div>
                                     <label>Student</label>
-                                    <input type="radio" name="radio" value="student"></input>
+                                    <input type="radio" name="radio" value="ordinary"></input>
                                 </div>
                                 <div>
                                     <label>Senior Citizen</label>
-                                    <input type="radio" name="radio" value="senior"></input>
+                                    <input type="radio" name="radio"></input>
                                 </div>
                             </div>
                     </form>
@@ -92,25 +93,27 @@
                             <label style="display:block">Choose one city or two if you are travelling between
                                 them</label>
                             <select>
-                                <option value="TelAviv">Tel Aviv</option>
-                                <option value="Jerusalem">Jerusalem</option>
-                                <option value="Haifa">Haifa</option>
-                                <option value="Rishon-le-zion">Rishon Le Zion</option>
-                                <option value="Herzlya">Herzlya</option>
-                                <option value="Herzlya">Herzlya</option>
-                                <option value="Herzlya">Herzlya</option>
-                                <option value="Beit-shemesh">Beit Shemesh</option>
+                                <option selected disabled>City</option>
+                                <option value="low">Tel Aviv</option>
+                                <option value="medium">Jerusalem</option>
+                                <option value="high">Haifa</option>
+                                <option value="high">Rishon Le Zion</option>
+                                <option value="high">Herzlya</option>
+                                <option value="high">Raanana</option>
+                                <option value="high">Netanya</option>
+                                <option value="high">Beit Shemesh</option>
                             </select>
                             <button id="add-city">add city</button>
                             <select id="hidden-cities">
-                                <option value="TelAviv">Tel Aviv</option>
-                                <option value="Jerusalem">Jerusalem</option>
-                                <option value="Haifa">Haifa</option>
-                                <option value="Rishon-le-zion">Rishon Le Zion</option>
-                                <option value="Herzlya">Herzlya</option>
-                                <option value="Herzlya">Herzlya</option>
-                                <option value="Herzlya">Herzlya</option>
-                                <option value="Beit-shemesh">Beit Shemesh</option>
+                                <option selected disabled>City</option>
+                                <option value="low">Tel Aviv</option>
+                                <option value="medium">Jerusalem</option>
+                                <option value="high">Haifa</option>
+                                <option value="high">Rishon Le Zion</option>
+                                <option value="high">Herzlya</option>
+                                <option value="high">Raanana</option>
+                                <option value="high">Netanya</option>
+                                <option value="high">Beit Shemesh</option>
                             </select>
                         </form>
                     </div>
@@ -131,8 +134,7 @@
                                 </tr>
                                 <tr>
                                     <td>City 2 City Bus</td>
-                                    <td><input id="c2c" class="rides-per-day" type="number" min="0" max="9"></input>
-                                    </td>
+                                    <td><input class="rides-per-day" type="number" min="0" max="9"></input></td>
                                     <td><input class="rides-per-day" type="number" min="0" max="9"></input></td>
                                     <td><input class="rides-per-day" type="number" min="0" max="9"></input></td>
                                     <td><input class="rides-per-day" type="number" min="0" max="9"></input></td>

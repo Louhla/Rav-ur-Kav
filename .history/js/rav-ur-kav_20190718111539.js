@@ -35,24 +35,10 @@ $(document).ready(() => {
     event.preventDefault();
     var objVal = {};
     var arr = $(':selected', this).map(function() {
-      return this.value;
+      return this.value();
+      console.log(objVal);
     })
-  console.log(objVal);
   })
-
-
-  $('#add').on("click", function() {
-    var objVal = {};
-    $('select').each(function() {
-      var arr = $(':selected', this).map(function() {
-        return this.value;
-      }).get();
-      objVal[$(this).attr("name")] = arr;
-    });
-    console.log(objVal);
-  });
-
-
   $('#plan-calculator-form3').click(function(){
     var frequency = $('#plan-calculator-form3').attr("id", "c2c");
       console.log(frequency);

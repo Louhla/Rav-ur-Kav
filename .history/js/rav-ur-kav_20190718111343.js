@@ -37,6 +37,8 @@ $(document).ready(() => {
     var arr = $(':selected', this).map(function() {
       return this.value;
     })
+
+  });
   console.log(objVal);
   })
 
