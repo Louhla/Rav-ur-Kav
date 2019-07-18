@@ -6,7 +6,6 @@ import numpy as np
 from user_generator import UserRandomizer
 from area_dict import gush_dan
 from PricesGushDan import prices
-import seaborn as sns
 import matplotlib.pyplot as plt
 import six
 
@@ -73,7 +72,7 @@ def render_mpl_table(data, filename,col_width=3.0, row_height=0.625, font_size=1
             cell.set_text_props(weight='bold', color='w')
             cell.set_facecolor(header_color)
         else:
-            cell.set_facecolor(row_colors[k[0]%len(row_colors) ])
+            cell.set_facecolor(row_colors[k[0]%len(row_colors)])
     fig = ax.get_figure()
     fig.savefig(filename)
     pass
