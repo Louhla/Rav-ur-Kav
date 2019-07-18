@@ -8,7 +8,7 @@ from area_dict import gush_dan
 from PricesGushDan import prices
 import matplotlib.pyplot as plt
 import six
-
+from outputter_f import outputter
 
 pd.set_option('display.max_columns', 15)
 
@@ -40,7 +40,7 @@ passenger_counts.drop(['stop_code', 'Timestamp', 'Mode', 'Line'], axis=1, inplac
 passenger_counts.columns = ['Number of Trips', 'Price Paid']
 summing = pd.DataFrame({'Number of Trips': passenger_counts['Number of Trips'].values.sum(), 'Price Paid': round(passenger_counts['Price Paid'].values.sum(), 2)}, index=['סכום'])
 merged_df = pd.concat([passenger_counts, summing])
-print(merged_df)
+# print(merged_df)
 
 areas = []
 
@@ -54,11 +54,7 @@ for row, city in enumerate(passenger['city'].values):
 
 passenger['region'] = areas
 
-# sns.set()
-# sns.barplot(passenger['region'].value_counts().transpose())
-# plt.show()
 
-# print(passenger['region'].value_counts())
 
 
 def render_mpl_table(data, filename,col_width=3.0, row_height=0.625, font_size=14,
@@ -88,3 +84,10 @@ def render_mpl_table(data, filename,col_width=3.0, row_height=0.625, font_size=1
 
 render_mpl_table(passenger, 'random_passengertable.png', header_columns=0, col_width=2.0)
 render_mpl_table(merged_df.reset_index(), 'totalprice_trips.png', header_columns=0, col_width=2.0)
+
+translation_df = stops[stops['stop_code'].isin(passenger['Place'].values)].loc[:,['stop_code','stop_lat', 'stop_lon']]
+passenger = pd.merge(passenger, translation_df, left_on=['Place'], right_on=['stop_code'])
+# passenger.drop(['stop_code_y'],inplace=True)
+# print(passenger)
+
+outputter(passenger)
