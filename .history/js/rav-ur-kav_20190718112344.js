@@ -34,22 +34,11 @@ $(document).ready(() => {
   $('#plan-calculator-form2').click(function(e){
     event.preventDefault();
     var objVal = {};
-    var city = $("#plan-calculator-form2").find(":selected").val();
-      console.log(city);
+    var arr = $(':selected', this).map(function() {
+      return this.value;
+    })
+  console.log(objVal);
   })
-
-//this could be another option:
-  // $('#add').on("click", function() {
-  //   var objVal = {};
-  //   $('select').each(function() {
-  //     var arr = $(':selected', this).map(function() {
-  //       return this.value;
-  //     }).get();
-  //     objVal[$(this).attr("name")] = arr;
-  //   });
-  //   console.log(objVal);
-  // });
-
   $('#plan-calculator-form3').click(function(){
     var frequency = $('#plan-calculator-form3').attr("id", "c2c");
       console.log(frequency);

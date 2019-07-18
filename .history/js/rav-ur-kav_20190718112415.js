@@ -50,6 +50,8 @@ $(document).ready(() => {
   //   console.log(objVal);
   // });
 
+
+
   $('#plan-calculator-form3').click(function(){
     var frequency = $('#plan-calculator-form3').attr("id", "c2c");
       console.log(frequency);

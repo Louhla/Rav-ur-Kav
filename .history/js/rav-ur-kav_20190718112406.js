@@ -39,16 +39,17 @@ $(document).ready(() => {
   })
 
 //this could be another option:
-  // $('#add').on("click", function() {
-  //   var objVal = {};
-  //   $('select').each(function() {
-  //     var arr = $(':selected', this).map(function() {
-  //       return this.value;
-  //     }).get();
-  //     objVal[$(this).attr("name")] = arr;
-  //   });
-  //   console.log(objVal);
-  // });
+  $('#add').on("click", function() {
+    var objVal = {};
+    $('select').each(function() {
+      var arr = $(':selected', this).map(function() {
+        return this.value;
+      }).get();
+      objVal[$(this).attr("name")] = arr;
+    });
+    console.log(objVal);
+  });
+
 
   $('#plan-calculator-form3').click(function(){
     var frequency = $('#plan-calculator-form3').attr("id", "c2c");
