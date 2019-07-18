@@ -6,6 +6,8 @@ import numpy as np
 from user_generator import UserRandomizer
 from area_dict import gush_dan
 from PricesGushDan import prices
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 pd.set_option('display.max_columns', 15)
 
@@ -28,7 +30,18 @@ price_df = pd.DataFrame.from_dict(prices, orient='index')
 # print(price_df.head())
 
 translation_df = stops[stops['stop_code'].isin(passenger['Place'].values)].loc[:,['stop_code','city']]  # FOUND THE STOPS
-passenger = pd.merge(passenger, translation_df, left_on=['Place'], right_on=['stop_code'])  # joined the city data to df
+passenger = pd.merge(passenger, translation_df, left_on=['Place'], right_on=['stop_code'])  # joined the city data to passenger df
+
+areas = []
+
+for row, city in enumerate(passenger['city'].values):
+    area = cities_per_area.isin([city]).sum(axis=0)
+    c = area[area == 1].index.values.astype(float)
+    if len(c) == 0:
+        areas.extend([1.])
+        continue
+    areas.extend(c)
+
+passenger['region'] = areas
+
 print(passenger)
-
-
