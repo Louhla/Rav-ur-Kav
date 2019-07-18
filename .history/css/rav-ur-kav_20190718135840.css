@@ -1,0 +1,324 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    
+    /* background-image: url(../IMG/bus.jpg); */
+}
+/* Modal START */
+#modal-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 12345;
+    display: none;
+}
+#plan1{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8CE95C;
+    /* vertical-align: middle; */
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    border-color: #b0fa0b;
+    box-shadow: 0 0 38px 19px #B0FA59;
+    font-weight: bold;
+
+}
+#plan2{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8CE95C;
+    /* vertical-align: middle; */
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+        color: white;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+        border-color: #b0fa0b;
+        box-shadow: 0 0 38px 19px #B0FA59;
+        font-weight: bold;
+}
+#plan3{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8CE95C;
+    /* vertical-align: middle; */
+    color: white;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    border-color: #b0fa0b;
+    box-shadow: 0 0 38px 19px #B0FA59;
+    font-weight: bold;
+}
+#plan4{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8CE95C;
+    /* vertical-align: middle; */
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+    border-color: #b0fa0b;
+    box-shadow: 0 0 38px 19px #B0FA59;
+    
+}
+.title{
+    font-size: 20px;
+}
+.subtitle{
+    margin: 45px 35px;
+}
+#modal-wrapper .modal {
+    background-color: #462F79;
+    width: 70vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.modal h1 {
+    font-size: 3rem;
+    margin: 1rem 5rem;
+    text-shadow: 1px 2px #000000;
+}
+
+.modal h3 {
+    font-size: 2rem;
+    margin: 1rem 5rem;
+}
+
+#button-box {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.my-button {
+    color: white;
+    background-color:#27164D;
+    height: 5vh;
+    width: 20vh;
+    font-size: 4vh;
+    text-align: center;
+    padding: 0;
+}
+/* Modal END */
+
+/* Homepage START */
+.header{
+    display: flex;
+    position: fixed;
+    z-index: 9;
+    justify-content: space-between;
+    width: 100%; 
+    align-items: center;
+    box-shadow: 5px;
+    background-color: #462F79;
+    color: white;
+    font-size: 22px;
+}
+.logo{
+    margin: 10px 0px 10px 50px;
+}
+.how-to{
+    margin: 10px 50px 10px 0px;
+}
+.existing-user{
+    background-color: #8CE95C;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50vh;
+    box-shadow: 5px 10px 8px -10px #888888;
+}
+.new-user{
+    background-color: #8CE95C;
+    text-align: center;
+    height: 50vh;
+    box-shadow: 5px 10px 8px -10px #888888;
+}
+h1{
+    text-align: center;
+    margin: 100px;
+    color: #8CE95C;
+    font-size: 38px;
+}
+.existing-user > h4, .new-user > h4{
+    background-color: #462F79;
+    padding: 15px 0px;
+    margin: 0px;
+    color: white;
+}
+#rav-kav-number{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+#rav-kav-number-button, #purchase, #rav-my-kav{
+    width: 60%;
+    margin: auto;
+    height: 50px;
+    border-radius: 50px;
+    border-style: none;
+    color: white;
+    background-color: #462F79;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -ms-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+#rav-kav-number-button{
+    position: relative;
+    top: -28px;
+}
+#submit-new-user{
+    height: 200px;
+}
+#rav-my-kav{
+    position: relative;
+    top: 37px;
+}
+#hidden-cities{
+    display:none;
+    margin: auto;
+    margin-left: 184px;
+}
+#add-city{
+    background-color: #462F79;
+    border-radius: 50px;
+    border-style: none;
+    color: white;
+}
+.submit-new-customer{
+    height: 200px;
+}
+.add-city{
+    background-color: #462F79;
+    border-radius: 50px;
+    border-style: none;
+    color:white;
+}
+#hidden-city{
+    display: none;
+}
+#rav-my-kav{
+    position: relative;
+    top: 50%;
+}
+#rav-kav-number-button:hover{
+    width: 62%;
+}
+a{
+    cursor:pointer;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none; 
+    color: white;
+}
+#how-to{
+    margin: 10px 50px 10px 0px;
+    cursor: pointer;
+}
+.existing-user{
+    background-color: #8CE95C;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50vh;
+}
+.new-user{
+    background-color: #8CE95C;
+    text-align: center;
+    height: 50vh;
+}
+h1{
+    text-align: center;
+    margin: 100px;
+    color: #462F79;
+    font-size: 38px;
+}
+.existing-user > h4, .new-user > h4{
+    background-color: #462F79;
+    padding: 15px 0px;
+    margin: 0px;
+    color: white;
+}
+#rav-kav-number{
+    width: 60%;
+    height: 30%;
+    margin: auto;
+    text-align: center;
+}
+.recommended-plan{
+    /* change to display none for jump link */
+    display: flex; 
+    align-items :center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.recommended-plan > div{
+    height: 300px;
+}
+h2{
+    color: #462F79;
+    font-size: 38px; 
+}
+#purchase{
+    margin-bottom: 100px;
+}
+.carousel{
+    position: relative;
+    height: 84%;
+    color: #462F79;
+}
+#passenger-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+label{
+    border-radius: 50%;
+}
+h3{
+    margin-bottom: 50px;
+}
+.rides-per-day{
+    width: 30px;
+    height: 30px;
+}
+#driving-pattern{
+    margin: auto;
+}
+#show-plan{
+    position: relative;
+    top: -27px;
+}
+/* Homepage END */

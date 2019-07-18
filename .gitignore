@@ -107,7 +107,3 @@ venv.bak/
 .idea/
 
 # Output files
-*.csv
-
-private key
-*.pem
