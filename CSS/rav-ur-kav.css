@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("/img/bus.jpg");
+    /* background-image: url(../IMG/bus.jpg); */
 }
 /* Modal START */
 #modal-wrapper {
@@ -108,7 +108,7 @@ h1{
     margin: auto;
     text-align: center;
 }
-#rav-kav-number-button, #purchase{
+#rav-kav-number-button, #purchase, #rav-my-kav{
     width: 60%;
     margin: auto;
     height: 50px;
@@ -120,6 +120,44 @@ h1{
     -moz-transition: width 0.5s ease-in-out;
     -ms-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
+}
+#rav-kav-number-button{
+    position: relative;
+    top: -28px;
+}
+#submit-new-user{
+    height: 200px;
+}
+#rav-my-kav{
+    position: relative;
+    top: 37px;
+}
+#hidden-cities{
+    display:none;
+    margin: auto;
+    margin-left: 184px;
+}
+#add-city{
+    background-color: #462F79;
+    border-radius: 50px;
+    border-style: none;
+    color: white;
+}
+.submit-new-customer{
+    height: 200px;
+}
+.add-city{
+    background-color: #462F79;
+    border-radius: 50px;
+    border-style: none;
+    color:white;
+}
+#hidden-city{
+    display: none;
+}
+#rav-my-kav{
+    position: relative;
+    top: 50%;
 }
 #rav-kav-number-button:hover{
     width: 62%;
@@ -168,7 +206,8 @@ h1{
     text-align: center;
 }
 .recommended-plan{
-    display: flex;
+    /* change to display none for jump link */
+    display: flex; 
     align-items :center;
     flex-direction: column;
     margin-top: 100px;
@@ -182,5 +221,33 @@ h2{
 }
 #purchase{
     margin-bottom: 100px;
+}
+.carousel{
+    position: relative;
+    height: 84%;
+    color: #462F79;
+}
+#passenger-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+label{
+    border-radius: 50%;
+}
+h3{
+    margin-bottom: 50px;
+}
+.rides-per-day{
+    width: 30px;
+    height: 30px;
+}
+#driving-pattern{
+    margin: auto;
+}
+#show-plan{
+    position: relative;
+    top: -27px;
 }
 /* Homepage END */

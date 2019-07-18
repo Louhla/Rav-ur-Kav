@@ -1,0 +1,40 @@
+console.log("step1");
+
+$(document).ready(() => {
+    // Globals
+
+    // Modal buttons
+    let howToButton = $("#how-to");
+    let closeModalButton = $("#close");
+    $(closeModalButton).on("click", () => {
+      $("#modal-wrapper").toggle();
+    });
+    $(howToButton).on("click", () => {
+      $("#modal-wrapper").toggle();
+      console.log('how to')
+    });
+});
+console.log("whats up")
+
+
+
+$('#rav-kav-number').on('input', function (event) { 
+    this.value = this.value.replace(/[^0-9]/g, '');
+});
+
+$('.carousel').carousel({
+    interval: false
+}); 
+
+$('#myCarousel').on('slid', '', function() {
+    var $this = $(this);
+  
+    $this.children('.carousel-control').show();
+  
+    if($('.carousel-inner .item:first').hasClass('active')) {
+      $this.children('.left.carousel-control').hide();
+    } else if($('.carousel-inner .item:last').hasClass('active')) {
+      $this.children('.right.carousel-control').hide();
+    }
+  
+  });
