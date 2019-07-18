@@ -121,40 +121,13 @@ h1{
     -ms-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
 }
-#rav-kav-number-button{
-    position: relative;
-    top: -28px;
-}
-#submit-new-user{
-    height: 200px;
-}
-#rav-my-kav{
-    position: relative;
-    top: 37px;
-}
-#hidden-cities{
-    display:none;
-    margin: auto;
-    margin-left: 184px;
-}
-#add-city{
-    background-color: #462F79;
-    border-radius: 50px;
-    border-style: none;
-    color: white;
-}
 .submit-new-customer{
     height: 200px;
 }
 .add-city{
-    background-color: #462F79;
-    border-radius: 50px;
-    border-style: none;
-    color:white;
+    
 }
-#hidden-city{
-    display: none;
-}
+
 #rav-my-kav{
     position: relative;
     top: 50%;
@@ -206,8 +179,7 @@ h1{
     text-align: center;
 }
 .recommended-plan{
-    /* change to display none for jump link */
-    display: flex; 
+    display: none;
     align-items :center;
     flex-direction: column;
     margin-top: 100px;

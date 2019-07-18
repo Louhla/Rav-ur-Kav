@@ -137,6 +137,7 @@ h1{
     margin: auto;
     margin-left: 184px;
 }
+}
 #add-city{
     background-color: #462F79;
     border-radius: 50px;
@@ -206,8 +207,7 @@ h1{
     text-align: center;
 }
 .recommended-plan{
-    /* change to display none for jump link */
-    display: flex; 
+    display: none;
     align-items :center;
     flex-direction: column;
     margin-top: 100px;
