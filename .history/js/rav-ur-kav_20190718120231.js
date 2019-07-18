@@ -23,6 +23,7 @@ $(reccomendedPlanButton2).on("click", () => {
 
 
 $('#rav-kav-number').on('input', function (event) {
+<<<<<<< HEAD
     this.value = this.value.replace(/[^0-9]/g, '');
 });
 
@@ -43,3 +44,25 @@ $('.carousel').carousel({
         $('.right').show();
     }
 });
+=======
+  this.value = this.value.replace(/[^0-9]/g, '');
+});
+
+$('.carousel').carousel({
+  interval: false
+}).on('slid.bs.carousel', function () {
+  curSlide = $('.active');
+  if (curSlide.is(':first-child')) {
+    $('.left').hide();
+    return;
+  } else {
+    $('.left').show();
+  }
+  if (curSlide.is(':last-child')) {
+    $('.right').hide();
+    return;
+  } else {
+    $('.right').show();
+  }
+});
+>>>>>>> 3251616a3721b9af5d75d67ed27649d38f0b6ca2
