@@ -23,19 +23,21 @@ $(document).ready(() => {
   $("#add-city").on("click", () => {
     $("#hidden-cities").css("display", "flex");
   });
-
+  
   $('#rav-kav-number-button').click(function(){
     var userRavKavNumber = $("#rav-kav-number").val();
       console.log(userRavKavNumber);
   })
-  $("#rav-kav-number-button").on("click", (function () {
-    event.preventDefault();
-    var userRavKavNumber = $("#rav-kav-number").val();
+  $("#post").on("click", (function () {
+    var userInput = $("input").val();
     $.ajax({
         type: "POST",
-        url: "localhost7000/",
+        url: "https://itc-colors.appspot.com/add_color",
         data: {
-            ravkavnumber: userRavKavNumber,
+            color: userInput,
+        },
+        success: function (response) {
+            $("body").append("<div>"+response);
         },
     });
 }));

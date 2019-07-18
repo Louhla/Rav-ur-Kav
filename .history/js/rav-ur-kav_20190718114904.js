@@ -33,9 +33,12 @@ $(document).ready(() => {
     var userRavKavNumber = $("#rav-kav-number").val();
     $.ajax({
         type: "POST",
-        url: "localhost7000/",
+        url: "localhost7000",
         data: {
-            ravkavnumber: userRavKavNumber,
+            color: userInput,
+        },
+        success: function (response) {
+            $("body").append("<div>"+response);
         },
     });
 }));
@@ -76,7 +79,7 @@ $('#rav-kav-number').on('input', function (event) {
   this.value = this.value.replace(/[^0-9]/g, '');
 });
 
-$('.carousel').carousel({
+$('.mycarousel').carousel({
   interval: false
 }).on('slid.bs.carousel', function () {
   curSlide = $('.active');

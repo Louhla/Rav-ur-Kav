@@ -23,25 +23,6 @@ $(document).ready(() => {
   $("#add-city").on("click", () => {
     $("#hidden-cities").css("display", "flex");
   });
-
-  $('#rav-kav-number-button').click(function(){
-    var userRavKavNumber = $("#rav-kav-number").val();
-      console.log(userRavKavNumber);
-  })
-  $("#rav-kav-number-button").on("click", (function () {
-    event.preventDefault();
-    var userRavKavNumber = $("#rav-kav-number").val();
-    $.ajax({
-        type: "POST",
-        url: "localhost7000/",
-        data: {
-            ravkavnumber: userRavKavNumber,
-        },
-    });
-}));
-
-
-
   $('#plan-calculator-form1').click(function(){
     var usertype = $("input[name=radio]:checked", "#plan-calculator-form1").val();
       console.log(usertype);

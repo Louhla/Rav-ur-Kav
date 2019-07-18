@@ -29,13 +29,15 @@ $(document).ready(() => {
       console.log(userRavKavNumber);
   })
   $("#rav-kav-number-button").on("click", (function () {
-    event.preventDefault();
     var userRavKavNumber = $("#rav-kav-number").val();
     $.ajax({
         type: "POST",
-        url: "localhost7000/",
+        url: "localhost7000",
         data: {
-            ravkavnumber: userRavKavNumber,
+            color: userInput,
+        },
+        success: function (response) {
+            $("body").append("<div>"+response);
         },
     });
 }));
