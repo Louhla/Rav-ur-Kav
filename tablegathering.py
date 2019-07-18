@@ -33,6 +33,11 @@ price_df = pd.DataFrame.from_dict(prices, orient='index')
 translation_df = stops[stops['stop_code'].isin(passenger['Place'].values)].loc[:,['stop_code','city']]  # FOUND THE STOPS
 passenger = pd.merge(passenger, translation_df, left_on=['Place'], right_on=['stop_code'])  # joined the city data to passenger df
 
+passenger['city'] = passenger['city'].str.replace('ירושלים', 'אשדוד')
+passenger_counts = passenger.groupby('city').count()
+passenger_counts['Price Paid'] = passenger_counts['Place'] * 5.9
+print(passenger_counts)
+
 areas = []
 
 for row, city in enumerate(passenger['city'].values):
